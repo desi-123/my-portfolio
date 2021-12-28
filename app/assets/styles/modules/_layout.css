@@ -1,0 +1,19 @@
+.container {
+    max-width: 140rem;
+    margin: 0 0 7rem 7rem;
+    background-color: $color-dark-primary-2;
+    box-shadow: 0 1rem 3rem rgba(170, 49, 49, 0.2);
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: $color-main-blue-1;
+    flex: 0 0 18rem;
+}
+
+.hero {
+    flex: 1;
+}
