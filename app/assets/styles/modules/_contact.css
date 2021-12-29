@@ -4,8 +4,19 @@
     align-items: center;
     justify-content: center;
     padding: 10vw;
+    box-shadow: 0 .2rem .1rem rgba(2, 3, 5, .5);
 
-
+    @media only screen and (max-width: $bp-large) {
+        padding: 17vw;
+    }
+    
+    @media only screen and (max-width: $bp-medium) {
+        padding: 17vw;
+        margin-top: 1rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+        padding: .1vw;
+    }
     &__heading--2 {
         font-size: 1.7rem;
         font-weight: 600;

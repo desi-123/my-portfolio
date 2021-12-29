@@ -1,17 +1,23 @@
 .container {
-    max-width: 140rem;
-    margin: 0 0 7rem 7rem;
+    max-width: 120rem;
     background-color: $color-dark-primary-2;
-    box-shadow: 0 1rem 3rem rgba(170, 49, 49, 0.2);
 }
 
 .content {
     display: flex;
+
+        @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+    }
 }
 
 .sidebar {
     background-color: $color-main-blue-1;
     flex: 0 0 18rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        flex: none;
+    }
 }
 
 .hero {

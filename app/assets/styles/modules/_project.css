@@ -5,10 +5,50 @@
     grid-column-gap: 7rem;
     align-items: center;
     justify-content: space-between;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 5rem;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 7rem;
+        align-items: center;
+        justify-items: center;
+
+        &:not(:last-child) {
+            padding: 15rem;
+        }
+    }
 }
 .gallery{
 position: relative;
 
+@media only screen and (max-width: $bp-medium) {
+        position: relative;
+        margin-left: 5rem;
+        z-index: 5;
+        width: 75%;
+        height: auto;
+        box-shadow: 0 2rem 5rem rgba($color-dark-primary-2, .5);
+        transition: all 2s;
+        outline-offset: 1rem;
+
+        &--img-1 {
+            left: -7rem;
+            top: -6rem;
+        }
+        &--img-2 {
+            right: 7rem;
+            top: -7rem;
+        }
+        &--img-3 {
+            left: 2rem;
+            top: -9rem;
+        }
+        &--img-4 {
+            left: -7rem;
+            top: -5rem;
+        }
+}
     &__project {
         position: absolute;
         z-index: 5;
@@ -19,20 +59,24 @@ position: relative;
         outline-offset: 1rem;
 
         &--img-1 {
-            left: 9rem;
-            top: -1rem;
+            left: -7rem;
+            top: -6rem;
         }
         &--img-2 {
             right: 7rem;
-            top: 1rem;
+            top: -7rem;
         }
         &--img-3 {
-            left: 5rem;
-            top: 3rem;
+            left: 2rem;
+            top: -9rem;
+        }
+        &--img-4 {
+            left: -7rem;
+            top: -5rem;
         }
 
         &:hover {
-            transform: scale(1.4) translateY(-.5rem) translateX(.5rem);
+            transform: scale(1.2) translateY(-.15rem) translateX(.15rem);
             box-shadow: 0 4rem 10rem rgba($color-dark-black-1, .6);
             z-index: 10;
             outline: .1rem solid gold;
@@ -52,13 +96,11 @@ position: relative;
     line-height: 2rem;
     padding: 3rem;
 
-    @include res(md) {
-        margin-left: 1rem;
-        padding: 1rem;    
+    @media only screen and (max-width: $bp-medium) {
+        padding: 0;
+        margin: -15rem -15rem 5rem -15rem;
     }
-    @include res(sm) {
-        padding: 1rem;    
-    }
+
 
 &__paragraph {
     font-size: 1.4rem;
@@ -74,7 +116,6 @@ position: relative;
         font-weight: 800;
         letter-spacing: .15rem;
         display: inline-block;
-
         background-image: linear-gradient(to right,$color-grey-dark-2, $color-dark-primary-1);
         -webkit-background-clip: text;
         color: transparent;
@@ -87,7 +128,7 @@ position: relative;
         
         text-transform: uppercase;
         margin: 3rem -7rem 1.5rem 7rem;
-        text-align: end;
+        text-align: center;
 
         animation-name: moveTitleLeft;
         animation-duration: 2s;

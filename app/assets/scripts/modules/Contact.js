@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Contact() {
+function Contact() {
     return (
         <section className="contact-section">
             <h2 className="btn contact-section__heading--2">Get in Touch</h2>
@@ -37,3 +37,5 @@ export default function Contact() {
         </section>
     )
 }
+
+export default Contact

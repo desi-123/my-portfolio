@@ -7,10 +7,12 @@ function Navigation() {
                 <img src="../assets/images/portfolio_logo.jpg" className='header--logo' alt="portfolio logo" />
             </div>
             <div className="header__item">
-                <button className="btn btn-nav">
-                    Get In Teach
-                </button>
-                <img src="../assets/images/desProfile.jpg" className='header--profile' alt="portfolio logo" />
+                <svg className="btn-icon">
+                    <use className='btn-icon--1' xlinkHref='assets/images/sprite.svg#icon-linkedin2'></use>
+                </svg>
+                <svg className="btn-icon">
+                    <use className='btn-icon--2' xlinkHref='assets/images/sprite.svg#icon-github'></use>
+                </svg>
             </div>
         </div>
     )

@@ -18,4 +18,7 @@ $color-grey-light-3: #ccc;
 $mainOrange: #d59541;
 $mainPurple: #e0e6;
 
-$bp-sidebaroff: 43.75em;
+$bp-largest: 112.5em;
+$bp-large: 75em;
+$bp-medium: 56.25em;
+$bp-small: 37.5em;

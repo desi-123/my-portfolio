@@ -13,13 +13,13 @@ const Footer = () => {
             </div>
             <div className="footer__nav">
                 <h4 className='footer__nav'>Social</h4>
-                <a role="button" className="btn"  href="http://github.com/">Github</a><br />
-                <a role="button" className="btn"  href="http://linkedin.com/">LinkedIn</a><br />
+                <a role="button" className="link"  href="http://github.com/">Github</a><br />
+                <a role="button" className="link"  href="http://linkedin.com/">LinkedIn</a><br />
             </div>
             <div className="footer__nav">
             <h4 className='footer__heading--4'>Contact</h4>
-                <a role="button" className="btn"  href="tel:+19999999999">+ 1-999-999-9999</a><br />
-                <a role="button" className="btn" href="mailto:itIsreal@gmail.com"> desiemeng21m@gmail.com</a>
+                <a className="link"  href="tel:+19999999999">+ 1-999-999-9999</a><br />
+                <a className="link" href="mailto:itIsreal@gmail.com"> desiemeng21m@gmail.com</a>
             </div>
         </footer>
     )
