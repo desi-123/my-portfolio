@@ -9,7 +9,7 @@ function Hero() {
             <div>
                 {about.map(abt => {
                     return (
-                        <div className="about-note">
+                        <div key={abt.id} className="about-note">
                             <h2 className="about-note--title">{abt.title}</h2>
                             <h2 className="about-note--subtitle">{abt.subtitle}</h2>
                             <p className="about-note--paragraph">{abt.note1}</p>

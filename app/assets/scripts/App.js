@@ -5,12 +5,9 @@ import "bootstrap-social/bootstrap-social.css";
 import '../styles/styles.css'
 import 'lazysizes'
 import MainApp from './modules/MainApp'
-import { AppProvider } from './modules/Context'
 
 ReactDom.render(
-    <AppProvider>
-        <MainApp />
-    </AppProvider>,
+    <MainApp />,
     document.getElementById("app"))
 
 if (module.hot) {

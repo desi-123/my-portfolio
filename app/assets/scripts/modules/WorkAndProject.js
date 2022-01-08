@@ -1,6 +1,5 @@
 import React from 'react'
 import project from '../data/project'
-import gallery from '../data/gallery'
 
 const WorkAndProject = () => {
     return (
@@ -8,7 +7,7 @@ const WorkAndProject = () => {
             <div className="gallery">
                 {project.map((proj) => {
                     return (
-                        <div className="paragraphs">
+                        <div key={proj.id} className="paragraphs">
                             <h2 className="paragraphs__title">{proj.title}</h2>
                             <p className='paragraphs__paragraph'>{proj.paragraph1}</p>
                             <p className='paragraphs__paragraph'>{proj.paragraph2}</p>
